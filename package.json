@@ -1,0 +1,19 @@
+{
+  "name": "page-inject",
+  "version": "0.0.1",
+  "description": "A script to inject html content into a host page",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angryobject/page-inject.git"
+  },
+  "main": "src/page-inject.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.{json,css,md}": ["prettier --write", "git add"]
+  }
+}
